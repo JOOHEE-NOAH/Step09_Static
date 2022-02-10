@@ -1,5 +1,5 @@
 package staticex;
-
+//jvm가배지컬렉션: 적정한 시점에 jvm이 정리 static 초기화부터 프로그램 종료시까지 있다가 프로그램 종료 후 jvm이 정리
 import java.util.Scanner;
 
 class EC{
@@ -8,9 +8,10 @@ class EC{
 	public static void setRate(double r) {
 		rate=r;
 	}	
-//	public static double toDollar(int won) { 
-//		return won/rate;
-//	}
+	public static double toDollar(int won) { 
+		return won/rate;}
+		public static double toWon(int dollar) { 
+			return dollar/rate;}
 	}
 
 public class StaticEx2 {
